@@ -1,6 +1,10 @@
 def sum_array(array):
     '''Return sum of all items in array'''
-
+    if len(array) == 1:
+        return array
+    else:
+        return array[-1] + sum_array(array[:-1])
+        
 def fibonacci(n):
     '''Return nth term in fibonacci sequence'''
     if n <= 1:
@@ -20,3 +24,8 @@ def factorial(n):
 
 def reverse(word):
     '''Return word in reverse'''
+    if len(word) == 0:
+        return word
+    else:
+        new_word = word[-1]
+        return new_word + reverse(word[:-1])
