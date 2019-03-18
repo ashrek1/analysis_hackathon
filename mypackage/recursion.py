@@ -1,10 +1,10 @@
 def sum_array(array):
     '''Return sum of all items in array'''
-    if len(array) == 1:
-        return array
+    if len(array) == 0:
+        return 0
     else:
         return array[-1] + sum_array(array[:-1])
-        
+
 def fibonacci(n):
     '''Return nth term in fibonacci sequence'''
     if n <= 1:
