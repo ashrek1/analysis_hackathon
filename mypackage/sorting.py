@@ -8,7 +8,7 @@ def bubble_sort(items):
         index -= 1
     return items
 
-def merge_sort(list1, list2):
+def merge(list1, list2):
     '''Return array of items, sorted in ascending order'''
     sorted_list = []
     list1_idx = 0
@@ -27,7 +27,7 @@ def merge_sort(list1, list2):
         sorted_list.extend(list2[list2_idx:])
     return sorted_list
 
-def merge_sort_split(items):
+def merge_sort(items):
     '''Splits an array of items, then sorts via a merge_sort'''
     if len(items) <= 1:
         return items
@@ -36,9 +36,9 @@ def merge_sort_split(items):
     list1 = items[:mid]
     list2 = items[mid:]
 
-    list1 = merge_sort_split(list1)
-    list2 = merge_sort_split(list2)
-    return list(merge_sort(list1,list2))
+    list1 = merge_sort(list1)
+    list2 = merge_sort(list2)
+    return list(merge(list1,list2))
 
 def quick_sort(items):
     '''Return array of items, sorted in ascending order'''
