@@ -5,7 +5,7 @@ xxx
 'python setup.py sdist'
 
 ## installing this package from github
-sdf
+'pip install git+https://github.com/ashrek1/analysis_hackathon'
 
 ## updating this package from GitHub
-ss
+'pip install --upgrade git+https://github.com/ashrek1/analysis_hackathon'
