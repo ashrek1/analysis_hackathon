@@ -9,3 +9,5 @@ this library was created as an example of how to publish your own python mypacka
 
 ## updating this package from GitHub
 'pip install --upgrade git+https://github.com/ashrek1/analysis_hackathon'
+
+"test"
